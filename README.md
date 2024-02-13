@@ -17,7 +17,7 @@ costs if provisioned. Please remember to destroy the infrastructure after using 
 ## Usage
 
 _Prerequisites: You must have a Terraform Cloud account with access to the private preview of
-Terraform Stacks, a GitHub account, and an Azure Subscription with Terraform Cloud configured as an OIDC
+Terraform Stacks, a GitHub account, and a GCP Project with Terraform Cloud configured as an OIDC
 identity provider. Details of all of this are found in the provided Stacks User Guide._
 
 1. **Configure GCP authentication** by creating a new service account in the Google Cloud Console (or with Terraform itself!) with the necessary roles (Cloud Storage, Cloud Functions, and API Gateway) and a service account key to allow the role to be assumed by Terraform Cloud (the OIDC identity provider). More details on this step can be found in the Stacks User Guide or in the [Dynamic Credentials with the GCP Provider](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/gcp-configuration) guide.
